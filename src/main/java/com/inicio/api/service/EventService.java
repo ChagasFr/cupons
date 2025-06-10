@@ -1,24 +1,24 @@
 package com.inicio.api.service;
 
 import com.inicio.api.domain.address.Address;
-import com.inicio.api.domain.cupom.Cupom;
-import com.inicio.api.domain.event.*;
+import com.inicio.api.domain.cupom.EventResponseDTO;
+import com.inicio.api.domain.event.Event;
+import com.inicio.api.domain.event.EventRequestDTO;
 import com.inicio.api.mappers.EventMapper;
 import com.inicio.api.repositories.EventRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.multipart.MultipartFile;
 import software.amazon.awssdk.core.sync.RequestBody;
 import software.amazon.awssdk.services.s3.S3Client;
 import software.amazon.awssdk.services.s3.model.GetUrlRequest;
 import software.amazon.awssdk.services.s3.model.PutObjectRequest;
-
 
 import java.nio.ByteBuffer;
 import java.util.Date;
@@ -40,7 +40,7 @@ public class EventService {
 
     private final S3Client s3Client;
     private final AddressService addressService;
-    private final CouponService couponService;
+    private final CupomService cupomService;
     private final EventRepository repository;
 
     @Autowired
