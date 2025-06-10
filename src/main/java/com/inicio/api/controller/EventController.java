@@ -1,9 +1,9 @@
 package com.inicio.api.controller;
 
+import com.inicio.api.domain.cupom.EventResponseDTO;
 import com.inicio.api.domain.event.Event;
 import com.inicio.api.domain.event.EventDetailsDTO;
 import com.inicio.api.domain.event.EventRequestDTO;
-import com.inicio.api.domain.event.EventResponseDTO;
 import com.inicio.api.service.EventService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
