@@ -1,7 +1,7 @@
 package com.inicio.api.service;
 
 import com.inicio.api.domain.address.Address;
-import com.inicio.api.domain.cupom.EventResponseDTO;
+import com.inicio.api.domain.event.EventResponseDTO;
 import com.inicio.api.domain.event.Event;
 import com.inicio.api.domain.event.EventRequestDTO;
 import com.inicio.api.mappers.EventMapper;
