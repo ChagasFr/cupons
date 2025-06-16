@@ -1,4 +1,4 @@
-package com.inicio.api.domain.cupom;
+package com.inicio.api.domain.event;
 
 import java.util.Date;
 import java.util.UUID;
